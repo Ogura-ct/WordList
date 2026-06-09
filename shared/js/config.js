@@ -1,44 +1,74 @@
-/**
- * ベースパス設定（GitHub Pages / ローカル両対応）
- *
- * - ローカル（WordList 内で server 起動）     → http://localhost:8080/
- * - ローカル（親フォルダで server 起動）       → http://localhost:8080/WordList/
- * - GitHub プロジェクトサイト                  → https://<user>.github.io/WordList/
- * - GitHub ユーザーサイト                        → https://<user>.github.io/
- */
-const REPO_NAME = 'WordList';
+(function (global) {
+  'use strict';
 
-function detectBasePath() {
-  const path = window.location.pathname;
-  if (path === `/${REPO_NAME}` || path.startsWith(`/${REPO_NAME}/`)) {
-    return `/${REPO_NAME}`;
+  const REPO_NAME = 'WordList';
+
+  function getSiteRoot() {
+    if (global.location.protocol === 'file:') return null;
+
+    const { origin, pathname } = global.location;
+    const repoPrefix = `/${REPO_NAME}/`;
+
+    if (pathname === `/${REPO_NAME}` || pathname.startsWith(repoPrefix)) {
+      return `${origin}${repoPrefix}`;
+    }
+
+    const themesPos = pathname.indexOf('/themes/');
+    if (themesPos >= 0) {
+      return `${origin}${pathname.slice(0, themesPos + 1)}`;
+    }
+
+    const lastSlash = pathname.lastIndexOf('/');
+    const dir = lastSlash >= 0 ? pathname.slice(0, lastSlash + 1) : '/';
+    return `${origin}${dir}`;
   }
-  return '';
-}
 
-export const BASE_PATH = detectBasePath();
+  function assetUrl(relativePath) {
+    const root = getSiteRoot();
+    const path = relativePath.replace(/^\//, '');
+    if (!root) return path;
+    return new URL(path, root).href;
+  }
 
-/** ベースパス付き URL を生成 */
-export function assetUrl(relativePath) {
-  const base = BASE_PATH.replace(/\/$/, '');
-  const path = relativePath.replace(/^\//, '');
-  return `${base}/${path}`;
-}
+  function themeUrl(themeId) {
+    const href = assetUrl(`themes/${themeId}/`);
+    try {
+      return new URL(href).pathname;
+    } catch {
+      return href;
+    }
+  }
 
-/** テーマページ URL */
-export function themeUrl(themeId) {
-  return assetUrl(`themes/${themeId}/`);
-}
+  function themeMetaUrl(themeId) {
+    return assetUrl(`themes/${themeId}/meta.json`);
+  }
 
-/** テーマ meta.json URL */
-export function themeMetaUrl(themeId) {
-  return assetUrl(`themes/${themeId}/meta.json`);
-}
+  function themesManifestUrl() {
+    return assetUrl('themes/manifest.json');
+  }
 
-/** 既知のテーマ ID 一覧（manifest.json 取得失敗時のフォールバック） */
-export const FALLBACK_THEME_IDS = ['sample'];
+  function isFileProtocol() {
+    return global.location.protocol === 'file:';
+  }
 
-/** themes/manifest.json の URL */
-export function themesManifestUrl() {
-  return assetUrl('themes/manifest.json');
-}
+  global.WordList = global.WordList || {};
+  global.WordList.config = {
+    REPO_NAME,
+    getSiteRoot,
+    assetUrl,
+    themeUrl,
+    themeMetaUrl,
+    themesManifestUrl,
+    isFileProtocol,
+    FALLBACK_THEME_IDS: ['cognitive-bias'],
+    get BASE_PATH() {
+      const root = getSiteRoot();
+      if (!root) return '';
+      try {
+        return new URL(root).pathname.replace(/\/$/, '');
+      } catch {
+        return '';
+      }
+    },
+  };
+})(window);

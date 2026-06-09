@@ -2,11 +2,17 @@
   "id": "TEMPLATE_ID",
   "title": "テーマタイトル",
   "description": "テーマの説明",
+  "source": {
+    "title": "出典タイトル",
+    "url": "https://example.com/",
+    "organization": "提供元",
+    "note": "データに関する注記（任意）"
+  },
   "apps": [
     {
-      "type": "wordbook",
-      "dataFile": "data/words.json",
-      "label": "単語帳"
+      "type": "quiz",
+      "dataFile": "data/quiz.json",
+      "label": "4択クイズ"
     }
   ]
 }

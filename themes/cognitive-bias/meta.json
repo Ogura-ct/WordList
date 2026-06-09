@@ -1,0 +1,18 @@
+{
+  "id": "cognitive-bias",
+  "title": "認知バイアス暗記",
+  "description": "錯思コレクション100の用語と意味を4択で学ぶ（全80問）",
+  "source": {
+    "title": "錯思コレクション100 — 動画で学ぶ One-Minute BiasSkit",
+    "url": "https://www.jumonji-u.ac.jp/sscs/ikeda/cognitive_bias/video/",
+    "organization": "十文字学園女子大学 池田正史研究室",
+    "note": "問題データは上記サイトの解説をもとに作成しています。"
+  },
+  "apps": [
+    {
+      "type": "quiz",
+      "dataFile": "data/quiz.json",
+      "label": "4択クイズ"
+    }
+  ]
+}

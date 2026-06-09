@@ -1,0 +1,15 @@
+{
+  "source": {
+    "title": "出典タイトル",
+    "url": "https://example.com/"
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "term": "用語名",
+      "meaning": "問題文として表示する意味・説明",
+      "example": "例：具体例を1文で",
+      "category": "カテゴリ名"
+    }
+  ]
+}
