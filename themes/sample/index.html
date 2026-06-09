@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>サンプル単語帳 — WordList</title>
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="../../apps/wordbook/wordbook.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="link-back" href="../../index.html">← テーマ一覧</a>
+    <h1 class="site-header__title" id="theme-title">サンプル単語帳</h1>
+    <p class="site-header__lead" id="theme-desc">英単語のサンプルテーマ（動作確認用）</p>
+  </header>
+
+  <main class="site-main">
+    <section class="card">
+      <div id="app-root" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script type="module">
+    import { assetUrl } from '../../shared/js/config.js';
+    import { fetchJson, getQueryParam } from '../../shared/js/utils.js';
+    import { mountWordbook } from '../../apps/wordbook/wordbook.js';
+
+    const THEME_ID = 'sample';
+
+    async function init() {
+      const meta = await fetchJson(assetUrl(`themes/${THEME_ID}/meta.json`));
+      if (meta) {
+        document.getElementById('theme-title').textContent = meta.title;
+        const desc = document.getElementById('theme-desc');
+        if (meta.description) desc.textContent = meta.description;
+      }
+
+      const appType = getQueryParam('app') || meta?.apps?.[0]?.type || 'wordbook';
+      const appConfig = meta?.apps?.find((a) => a.type === appType) ?? meta?.apps?.[0];
+      const dataFile = appConfig?.dataFile ?? 'data/words.json';
+      const data = await fetchJson(assetUrl(`themes/${THEME_ID}/${dataFile}`));
+
+      const root = document.getElementById('app-root');
+      if (appType === 'wordbook' && data) {
+        mountWordbook(root, data, { themeId: THEME_ID });
+      } else {
+        root.textContent = 'アプリを読み込めませんでした';
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

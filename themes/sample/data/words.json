@@ -1,0 +1,25 @@
+{
+  "words": [
+    {
+      "id": "w001",
+      "term": "apple",
+      "reading": "アップル",
+      "meaning": "りんご",
+      "note": ""
+    },
+    {
+      "id": "w002",
+      "term": "book",
+      "reading": "ブック",
+      "meaning": "本",
+      "note": ""
+    },
+    {
+      "id": "w003",
+      "term": "hello",
+      "reading": "ハロー",
+      "meaning": "こんにちは",
+      "note": "挨拶"
+    }
+  ]
+}

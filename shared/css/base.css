@@ -1,0 +1,233 @@
+/* WordList — 共通スタイル（モバイルファースト） */
+
+:root {
+  --color-bg: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-text: #1d1d1f;
+  --color-text-muted: #6e6e73;
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ed;
+  --color-border: #d2d2d7;
+  --color-error: #d70015;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+  --max-width: 480px;
+  --tap-min: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #000000;
+    --color-surface: #1c1c1e;
+    --color-text: #f5f5f7;
+    --color-text-muted: #98989d;
+    --color-accent: #0a84ff;
+    --color-accent-hover: #409cff;
+    --color-border: #38383a;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  overflow-x: hidden;
+}
+
+/* Layout */
+
+.site-header,
+.site-main,
+.site-footer {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+.site-header {
+  padding-top: calc(var(--space-lg) + env(safe-area-inset-top, 0px));
+  padding-bottom: var(--space-md);
+}
+
+.site-header__title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.site-header__lead {
+  margin: var(--space-xs) 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.site-main {
+  padding-bottom: var(--space-xl);
+}
+
+.site-footer {
+  padding-bottom: calc(var(--space-lg) + env(safe-area-inset-bottom, 0px));
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+}
+
+/* Card */
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.card__title {
+  margin: 0 0 var(--space-md);
+  font-size: 1.125rem;
+}
+
+/* Theme list */
+
+.theme-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.theme-list__loading,
+.theme-list__empty,
+.theme-list__error {
+  color: var(--color-text-muted);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.theme-list__error {
+  color: var(--color-error);
+}
+
+.theme-list__item {
+  margin: 0;
+}
+
+.theme-list__link {
+  display: block;
+  min-height: var(--tap-min);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.theme-list__link:hover,
+.theme-list__link:focus-visible {
+  background: var(--color-border);
+  outline: none;
+}
+
+.theme-list__link-title {
+  display: block;
+  font-weight: 600;
+}
+
+.theme-list__link-desc {
+  display: block;
+  margin-top: var(--space-xs);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+/* Buttons & links */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--tap-min);
+  min-width: var(--tap-min);
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--color-accent-hover);
+  outline: none;
+}
+
+.btn--secondary {
+  background: var(--color-bg);
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+  background: var(--color-border);
+}
+
+.link-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-min);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.link-back:hover,
+.link-back:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* PC: やや広めのカラム */
+
+@media (min-width: 768px) {
+  :root {
+    --max-width: 560px;
+  }
+
+  body {
+    padding-inline: var(--space-md);
+  }
+}

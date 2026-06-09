@@ -1,0 +1,12 @@
+{
+  "id": "TEMPLATE_ID",
+  "title": "テーマタイトル",
+  "description": "テーマの説明",
+  "apps": [
+    {
+      "type": "wordbook",
+      "dataFile": "data/words.json",
+      "label": "単語帳"
+    }
+  ]
+}

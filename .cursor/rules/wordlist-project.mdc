@@ -1,0 +1,20 @@
+---
+description: WordList 暗記サイト — プロジェクト共通規約（GitHub Pages / モバイルファースト）
+alwaysApply: true
+---
+
+# WordList プロジェクト規約
+
+作業前に **`AGENTS.md`** を読み、従うこと。
+
+## 必須
+
+- HTML + CSS + JS のみ。ビルドツール・フレームワークは使わない
+- GitHub Pages 静的配信。パスは `shared/js/config.js` の `BASE_PATH` 経由
+- **モバイルファースト**（375px 基準）。PC は中央カラムで最低限対応
+- 共通資産は `shared/`、UI 型は `apps/`、学習データは `themes/<id>/`
+- 新テーマは `themes/_template/` をコピー。一覧は meta.json から動的生成
+
+## 禁止
+
+- ルートパス直書き、`shared/` の CSS/JS コピペ、外部 API 依存の追加（明示要求時を除く）
