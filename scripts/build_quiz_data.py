@@ -12,6 +12,18 @@ from definitions import DEFINITIONS
 BASE = "https://www.jumonji-u.ac.jp/sscs/ikeda/cognitive_bias/"
 VIDEO = BASE + "video/"
 HTML_FILE = os.path.join(os.path.dirname(__file__), "video_page.html")
+ENGLISH_FILE = os.path.join(os.path.dirname(__file__), "english_terms.json")
+
+# 出典サイトの表記ゆれ・誤記を学術的な英語表記に修正
+ENGLISH_CORRECTIONS = {
+    "ネガティビティ・バイアス": "negativity bias",
+    "錯誤相関": "illusory correlation",
+    "計画錯誤": "planning fallacy",
+    "代表性ヒューリスティック": "representativeness heuristic",
+    "回帰の誤謬": "regression fallacy",
+    "モラル・ライセンシング": "moral licensing",
+    "真実性の錯覚": "illusion of truth effect",
+}
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "themes", "cognitive-bias", "data")
 OUT_FILE = os.path.join(OUT_DIR, "quiz.json")
 
@@ -47,14 +59,28 @@ def parse_video_list(html):
     return items
 
 
-def build_item(item, index):
+def load_english_terms():
+    with open(ENGLISH_FILE, encoding="utf-8") as f:
+        raw = json.load(f)
+    terms = {}
+    for ja, en in raw.items():
+        en = ENGLISH_CORRECTIONS.get(ja, en)
+        terms[ja] = re.sub(r"\s+", " ", en).strip()
+    return terms
+
+
+def build_item(item, index, english_terms):
     term = item["term"]
     entry = DEFINITIONS.get(term)
     if not entry:
         raise KeyError(f"Missing definition for: {term}")
+    term_en = english_terms.get(term, "")
+    if not term_en:
+        raise KeyError(f"Missing English term for: {term}")
     return {
         "id": f"cb{index:03d}",
         "term": term,
+        "termEn": term_en,
         "meaning": entry["meaning"],
         "example": entry["example"],
         "category": item["category"],
@@ -76,7 +102,8 @@ def main():
     if extra:
         print(f"Warning: unused definitions: {extra}")
 
-    results = [build_item(item, i + 1) for i, item in enumerate(items)]
+    english_terms = load_english_terms()
+    results = [build_item(item, i + 1, english_terms) for i, item in enumerate(items)]
 
     data = {
         "source": {

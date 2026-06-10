@@ -84,8 +84,8 @@
 
       const distractors = pickDistractors(allQuestions, q, 3);
       const choices = shuffle([
-        { text: q.term, correct: true },
-        ...distractors.map((d) => ({ text: d, correct: false })),
+        { question: q, correct: true },
+        ...distractors.map((d) => ({ question: d, correct: false })),
       ]);
 
       clearElement(choicesEl);
@@ -95,7 +95,7 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'app-quiz__choice';
-        btn.textContent = choice.text;
+        renderChoiceLabel(btn, choice.question);
         btn.dataset.correct = choice.correct ? '1' : '0';
         btn.addEventListener('click', () => selectAnswer(btn, q));
         li.appendChild(btn);
@@ -123,8 +123,8 @@
       feedbackEl.hidden = false;
       feedbackEl.className = `app-quiz__feedback app-quiz__feedback--${isCorrect ? 'ok' : 'ng'}`;
       feedbackEl.innerHTML = isCorrect
-        ? `<strong>正解！</strong> ${escapeHtml(q.term)}`
-        : `<strong>不正解</strong> 正解は ${escapeHtml(q.term)} です。`;
+        ? `<strong>正解！</strong> ${formatTermLabel(q)}`
+        : `<strong>不正解</strong> 正解は ${formatTermLabel(q)} です。`;
 
       nextBtn.hidden = false;
       nextBtn.textContent =
@@ -155,7 +155,27 @@
 
   function pickDistractors(all, current, count) {
     const others = all.filter((q) => q.id !== current.id);
-    return shuffle(others).slice(0, count).map((q) => q.term);
+    return shuffle(others).slice(0, count);
+  }
+
+  function renderChoiceLabel(btn, question) {
+    btn.innerHTML = '';
+    const ja = document.createElement('span');
+    ja.className = 'app-quiz__choice-ja';
+    ja.textContent = question.term;
+    btn.appendChild(ja);
+    if (question.termEn) {
+      const en = document.createElement('span');
+      en.className = 'app-quiz__choice-en';
+      en.textContent = question.termEn;
+      btn.appendChild(en);
+    }
+  }
+
+  function formatTermLabel(question) {
+    const ja = escapeHtml(question.term);
+    if (!question.termEn) return ja;
+    return `${ja} <span class="app-quiz__feedback-en">(${escapeHtml(question.termEn)})</span>`;
   }
 
   function shuffle(arr) {

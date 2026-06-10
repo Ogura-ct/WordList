@@ -60,7 +60,7 @@
     themeMetaUrl,
     themesManifestUrl,
     isFileProtocol,
-    FALLBACK_THEME_IDS: ['cognitive-bias'],
+    FALLBACK_THEME_IDS: ['cognitive-bias', 'thinking-tools'],
     get BASE_PATH() {
       const root = getSiteRoot();
       if (!root) return '';
