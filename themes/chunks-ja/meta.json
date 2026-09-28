@@ -1,0 +1,17 @@
+{
+  "id": "chunks-ja",
+  "title": "日本語で聞いて、英語で答える",
+  "description": "EnglishLesson の練習と同じ会話フレーズ150。表面は日本語、めくると英語です。番号は練習の1〜15と同じ10件ずつです。",
+  "source": {
+    "title": "EnglishLesson 練習",
+    "organization": "EnglishLesson",
+    "note": "会話の言い方150。練習で選ぶ番号と、このカードの番号は同じ並びです。"
+  },
+  "apps": [
+    {
+      "type": "wordbook",
+      "dataFile": "data/words.json",
+      "label": "フレーズカード"
+    }
+  ]
+}

@@ -6,6 +6,24 @@
   gap: var(--space-lg);
 }
 
+.app-wordbook__filter {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 1rem;
+}
+
+.app-wordbook__group {
+  flex: 1;
+  min-height: var(--tap-min);
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+
 .app-wordbook__card {
   position: relative;
   min-height: 200px;
@@ -50,6 +68,8 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .app-wordbook__reading {

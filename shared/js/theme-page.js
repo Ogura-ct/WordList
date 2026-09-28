@@ -3,17 +3,22 @@
 
   const APP_LOADERS = {
     quiz: (root, data, opts) => global.WordList.mountQuiz(root, data, opts),
+    wordbook: (root, data, opts) => global.WordList.mountWordbook(root, data, opts),
   };
 
   function renderSource(meta, data) {
     const src = meta?.source ?? data?.source;
     const el = document.getElementById('theme-source');
     if (!src || !el) return;
+    const title = src.title || '出典';
+    const titleHtml = src.url
+      ? `<a href="${src.url}" target="_blank" rel="noopener noreferrer">${title}</a>`
+      : title;
     el.hidden = false;
     el.innerHTML = `
       <p><strong>出典</strong></p>
       <p>
-        <a href="${src.url}" target="_blank" rel="noopener noreferrer">${src.title}</a>
+        ${titleHtml}
         ${src.organization ? `<br>${src.organization}` : ''}
       </p>
       ${src.note ? `<p>${src.note}</p>` : ''}

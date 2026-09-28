@@ -1,0 +1,968 @@
+{
+  "frontLabel": "日本語",
+  "backLabel": "英語",
+  "groups": [
+    {
+      "id": "1",
+      "label": "1（1–10）"
+    },
+    {
+      "id": "2",
+      "label": "2（11–20）"
+    },
+    {
+      "id": "3",
+      "label": "3（21–30）"
+    },
+    {
+      "id": "4",
+      "label": "4（31–40）"
+    },
+    {
+      "id": "5",
+      "label": "5（41–50）"
+    },
+    {
+      "id": "6",
+      "label": "6（51–60）"
+    },
+    {
+      "id": "7",
+      "label": "7（61–70）"
+    },
+    {
+      "id": "8",
+      "label": "8（71–80）"
+    },
+    {
+      "id": "9",
+      "label": "9（81–90）"
+    },
+    {
+      "id": "10",
+      "label": "10（91–100）"
+    },
+    {
+      "id": "11",
+      "label": "11（101–110）"
+    },
+    {
+      "id": "12",
+      "label": "12（111–120）"
+    },
+    {
+      "id": "13",
+      "label": "13（121–130）"
+    },
+    {
+      "id": "14",
+      "label": "14（131–140）"
+    },
+    {
+      "id": "15",
+      "label": "15（141–150）"
+    }
+  ],
+  "words": [
+    {
+      "id": "c001",
+      "term": "そういうものです。",
+      "meaning": "It is what it is.",
+      "group": "1"
+    },
+    {
+      "id": "c002",
+      "term": "終わったことは終わったことです。",
+      "meaning": "What's done is done.",
+      "group": "1"
+    },
+    {
+      "id": "c003",
+      "term": "もう少し頑張って。",
+      "meaning": "Hang in there.",
+      "group": "1"
+    },
+    {
+      "id": "c004",
+      "term": "どうなるかわかりません。",
+      "meaning": "You never know.",
+      "group": "1"
+    },
+    {
+      "id": "c005",
+      "term": "今やってます。",
+      "meaning": "I'm on it.",
+      "group": "1"
+    },
+    {
+      "id": "c006",
+      "term": "参加します。",
+      "meaning": "I'm in.",
+      "group": "1"
+    },
+    {
+      "id": "c007",
+      "term": "気楽にやって。",
+      "meaning": "Take it easy.",
+      "group": "1"
+    },
+    {
+      "id": "c008",
+      "term": "やっぱりそうだと思った。",
+      "meaning": "I knew it.",
+      "group": "1"
+    },
+    {
+      "id": "c009",
+      "term": "どうぞ。",
+      "meaning": "Go ahead.",
+      "group": "1"
+    },
+    {
+      "id": "c010",
+      "term": "お先にどうぞ。",
+      "meaning": "After you.",
+      "group": "1"
+    },
+    {
+      "id": "c011",
+      "term": "すごい偶然ですね。",
+      "meaning": "What a coincidence.",
+      "group": "2"
+    },
+    {
+      "id": "c012",
+      "term": "任せてください。",
+      "meaning": "Leave it to me.",
+      "group": "2"
+    },
+    {
+      "id": "c013",
+      "term": "ところで。",
+      "meaning": "By the way.",
+      "group": "2"
+    },
+    {
+      "id": "c014",
+      "term": "わかりません。",
+      "meaning": "I don't know.",
+      "group": "2"
+    },
+    {
+      "id": "c015",
+      "term": "久しぶりです。",
+      "meaning": "Long time no see.",
+      "group": "2"
+    },
+    {
+      "id": "c016",
+      "term": "しばらくでした。",
+      "meaning": "It's been a while.",
+      "group": "2"
+    },
+    {
+      "id": "c017",
+      "term": "すごく久しぶりです。",
+      "meaning": "It's been ages.",
+      "group": "2"
+    },
+    {
+      "id": "c018",
+      "term": "私のおごりです。",
+      "meaning": "It's on me.",
+      "group": "2"
+    },
+    {
+      "id": "c019",
+      "term": "それ、似合っています。",
+      "meaning": "You look great in that.",
+      "group": "2"
+    },
+    {
+      "id": "c020",
+      "term": "お似合いです。",
+      "meaning": "It suits you.",
+      "group": "2"
+    },
+    {
+      "id": "c021",
+      "term": "気をつけて。",
+      "meaning": "Take care.",
+      "group": "3"
+    },
+    {
+      "id": "c022",
+      "term": "よかったら。",
+      "meaning": "If you want.",
+      "group": "3"
+    },
+    {
+      "id": "c023",
+      "term": "もったいないです。",
+      "meaning": "That's a waste.",
+      "group": "3"
+    },
+    {
+      "id": "c024",
+      "term": "お金の無駄です。",
+      "meaning": "That's a waste of money.",
+      "group": "3"
+    },
+    {
+      "id": "c025",
+      "term": "念のため。",
+      "meaning": "Just in case.",
+      "group": "3"
+    },
+    {
+      "id": "c026",
+      "term": "面倒です。",
+      "meaning": "It's a hassle.",
+      "group": "3"
+    },
+    {
+      "id": "c027",
+      "term": "本当に面倒です。",
+      "meaning": "It's a pain in the neck.",
+      "group": "3"
+    },
+    {
+      "id": "c028",
+      "term": "なるほど、筋が通ります。",
+      "meaning": "That makes sense.",
+      "group": "3"
+    },
+    {
+      "id": "c029",
+      "term": "意味がわかりません。",
+      "meaning": "It doesn't make sense.",
+      "group": "3"
+    },
+    {
+      "id": "c030",
+      "term": "知れてよかったです。",
+      "meaning": "Good to know.",
+      "group": "3"
+    },
+    {
+      "id": "c031",
+      "term": "あなた次第です。",
+      "meaning": "It's up to you.",
+      "group": "4"
+    },
+    {
+      "id": "c032",
+      "term": "あなたが決めてください。",
+      "meaning": "It's your call.",
+      "group": "4"
+    },
+    {
+      "id": "c033",
+      "term": "いい判断です。",
+      "meaning": "Good call.",
+      "group": "4"
+    },
+    {
+      "id": "c034",
+      "term": "今日はここまでにしましょう。",
+      "meaning": "Let's call it a day.",
+      "group": "4"
+    },
+    {
+      "id": "c035",
+      "term": "大したことないです。",
+      "meaning": "No big deal.",
+      "group": "4"
+    },
+    {
+      "id": "c036",
+      "term": "経過を教えてください。",
+      "meaning": "Keep me posted.",
+      "group": "4"
+    },
+    {
+      "id": "c037",
+      "term": "気にしないでください。",
+      "meaning": "No worries.",
+      "group": "4"
+    },
+    {
+      "id": "c038",
+      "term": "どうなるかですね。",
+      "meaning": "We'll see.",
+      "group": "4"
+    },
+    {
+      "id": "c039",
+      "term": "すぐ戻ります。",
+      "meaning": "I'll be right back.",
+      "group": "4"
+    },
+    {
+      "id": "c040",
+      "term": "すぐ行きます。",
+      "meaning": "I'll be right there.",
+      "group": "4"
+    },
+    {
+      "id": "c041",
+      "term": "誤解しないでください。",
+      "meaning": "Don't get me wrong.",
+      "group": "5"
+    },
+    {
+      "id": "c042",
+      "term": "文句は言えません。",
+      "meaning": "I can't complain.",
+      "group": "5"
+    },
+    {
+      "id": "c043",
+      "term": "いい指摘です。",
+      "meaning": "That's a good point.",
+      "group": "5"
+    },
+    {
+      "id": "c044",
+      "term": "そろそろです。",
+      "meaning": "It's about time.",
+      "group": "5"
+    },
+    {
+      "id": "c045",
+      "term": "うまくいくといいですね。",
+      "meaning": "Fingers crossed.",
+      "group": "5"
+    },
+    {
+      "id": "c046",
+      "term": "ほっとしました。",
+      "meaning": "That's a relief.",
+      "group": "5"
+    },
+    {
+      "id": "c047",
+      "term": "危なかったです。",
+      "meaning": "That was a close one.",
+      "group": "5"
+    },
+    {
+      "id": "c048",
+      "term": "そういうこともあります。",
+      "meaning": "It happens.",
+      "group": "5"
+    },
+    {
+      "id": "c049",
+      "term": "あなたならできます。",
+      "meaning": "You got this.",
+      "group": "5"
+    },
+    {
+      "id": "c050",
+      "term": "悪く思わないでください。",
+      "meaning": "No hard feelings.",
+      "group": "5"
+    },
+    {
+      "id": "c051",
+      "term": "悪く取らないでください。",
+      "meaning": "Don't take it personally.",
+      "group": "6"
+    },
+    {
+      "id": "c052",
+      "term": "悪気はないです。",
+      "meaning": "No offense.",
+      "group": "6"
+    },
+    {
+      "id": "c053",
+      "term": "今回はやめておきます。",
+      "meaning": "I'll pass.",
+      "group": "6"
+    },
+    {
+      "id": "c054",
+      "term": "教えてください。",
+      "meaning": "Let me know.",
+      "group": "6"
+    },
+    {
+      "id": "c055",
+      "term": "あとで知らせます。",
+      "meaning": "I'll let you know.",
+      "group": "6"
+    },
+    {
+      "id": "c056",
+      "term": "見せてください。",
+      "meaning": "Let me see.",
+      "group": "6"
+    },
+    {
+      "id": "c057",
+      "term": "考えさせてください。",
+      "meaning": "Let me think.",
+      "group": "6"
+    },
+    {
+      "id": "c058",
+      "term": "説明させてください。",
+      "meaning": "Let me explain.",
+      "group": "6"
+    },
+    {
+      "id": "c059",
+      "term": "それはもっともです。",
+      "meaning": "That's fair enough.",
+      "group": "6"
+    },
+    {
+      "id": "c060",
+      "term": "確かにそうです。",
+      "meaning": "That's true.",
+      "group": "6"
+    },
+    {
+      "id": "c061",
+      "term": "考えておきます。",
+      "meaning": "I'll think about it.",
+      "group": "7"
+    },
+    {
+      "id": "c062",
+      "term": "要点を言いましょう。",
+      "meaning": "Let's get to the point.",
+      "group": "7"
+    },
+    {
+      "id": "c063",
+      "term": "単刀直入に言いましょう。",
+      "meaning": "Let's cut to the chase.",
+      "group": "7"
+    },
+    {
+      "id": "c064",
+      "term": "遠回しに言わないで。",
+      "meaning": "Stop beating around the bush.",
+      "group": "7"
+    },
+    {
+      "id": "c065",
+      "term": "私にはどうにもできません。",
+      "meaning": "It's out of my hands.",
+      "group": "7"
+    },
+    {
+      "id": "c066",
+      "term": "そのうちわかります。",
+      "meaning": "Time will tell.",
+      "group": "7"
+    },
+    {
+      "id": "c067",
+      "term": "まだです。",
+      "meaning": "Not yet.",
+      "group": "7"
+    },
+    {
+      "id": "c068",
+      "term": "ですよね。",
+      "meaning": "I know, right?",
+      "group": "7"
+    },
+    {
+      "id": "c069",
+      "term": "言っている意味はわかりますか。",
+      "meaning": "You know what I mean?",
+      "group": "7"
+    },
+    {
+      "id": "c070",
+      "term": "そうだと思います。",
+      "meaning": "I guess so.",
+      "group": "7"
+    },
+    {
+      "id": "c071",
+      "term": "そう思います。",
+      "meaning": "I think so.",
+      "group": "8"
+    },
+    {
+      "id": "c072",
+      "term": "なるほど。",
+      "meaning": "I see.",
+      "group": "8"
+    },
+    {
+      "id": "c073",
+      "term": "まさか。",
+      "meaning": "No way.",
+      "group": "8"
+    },
+    {
+      "id": "c074",
+      "term": "冗談でしょう。",
+      "meaning": "You're kidding.",
+      "group": "8"
+    },
+    {
+      "id": "c075",
+      "term": "冗談です。",
+      "meaning": "I'm just kidding.",
+      "group": "8"
+    },
+    {
+      "id": "c076",
+      "term": "いいじゃないですか。",
+      "meaning": "Why not?",
+      "group": "8"
+    },
+    {
+      "id": "c077",
+      "term": "ちょっと待ってください。",
+      "meaning": "Just a second.",
+      "group": "8"
+    },
+    {
+      "id": "c078",
+      "term": "少し待ってください。",
+      "meaning": "Just a minute.",
+      "group": "8"
+    },
+    {
+      "id": "c079",
+      "term": "待ってください。",
+      "meaning": "Hold on.",
+      "group": "8"
+    },
+    {
+      "id": "c080",
+      "term": "待ちきれません。",
+      "meaning": "I can't wait.",
+      "group": "8"
+    },
+    {
+      "id": "c081",
+      "term": "ごゆっくりどうぞ。",
+      "meaning": "Take your time.",
+      "group": "9"
+    },
+    {
+      "id": "c082",
+      "term": "急がなくていいです。",
+      "meaning": "No rush.",
+      "group": "9"
+    },
+    {
+      "id": "c083",
+      "term": "全然わかりません。",
+      "meaning": "I have no idea.",
+      "group": "9"
+    },
+    {
+      "id": "c084",
+      "term": "残念ですが、そうです。",
+      "meaning": "I'm afraid so.",
+      "group": "9"
+    },
+    {
+      "id": "c085",
+      "term": "残念ですが、違います。",
+      "meaning": "I'm afraid not.",
+      "group": "9"
+    },
+    {
+      "id": "c086",
+      "term": "もういいです。",
+      "meaning": "Never mind.",
+      "group": "9"
+    },
+    {
+      "id": "c087",
+      "term": "さあ、行きましょう。",
+      "meaning": "Come on.",
+      "group": "9"
+    },
+    {
+      "id": "c088",
+      "term": "調子はどうですか。",
+      "meaning": "What's up?",
+      "group": "9"
+    },
+    {
+      "id": "c089",
+      "term": "どうしたんですか。",
+      "meaning": "What's wrong?",
+      "group": "9"
+    },
+    {
+      "id": "c090",
+      "term": "何があったんですか。",
+      "meaning": "What happened?",
+      "group": "9"
+    },
+    {
+      "id": "c091",
+      "term": "そういうことです。",
+      "meaning": "That's it.",
+      "group": "10"
+    },
+    {
+      "id": "c092",
+      "term": "行きましょう。",
+      "meaning": "Let's go.",
+      "group": "10"
+    },
+    {
+      "id": "c093",
+      "term": "そのとおりです。",
+      "meaning": "That's right.",
+      "group": "10"
+    },
+    {
+      "id": "c094",
+      "term": "どうしてですか。",
+      "meaning": "How come?",
+      "group": "10"
+    },
+    {
+      "id": "c095",
+      "term": "私も同じです。",
+      "meaning": "Same here.",
+      "group": "10"
+    },
+    {
+      "id": "c096",
+      "term": "すごいですね。",
+      "meaning": "That's awesome.",
+      "group": "10"
+    },
+    {
+      "id": "c097",
+      "term": "とてもいいです。",
+      "meaning": "That's great.",
+      "group": "10"
+    },
+    {
+      "id": "c098",
+      "term": "かっこいいです。",
+      "meaning": "That's cool.",
+      "group": "10"
+    },
+    {
+      "id": "c099",
+      "term": "はい、どうぞ。",
+      "meaning": "Here you go.",
+      "group": "10"
+    },
+    {
+      "id": "c100",
+      "term": "着きました。",
+      "meaning": "Here we are.",
+      "group": "10"
+    },
+    {
+      "id": "c101",
+      "term": "本気で言っています。",
+      "meaning": "I mean it.",
+      "group": "11"
+    },
+    {
+      "id": "c102",
+      "term": "わざとではありません。",
+      "meaning": "I didn't mean to.",
+      "group": "11"
+    },
+    {
+      "id": "c103",
+      "term": "本気ですか。",
+      "meaning": "Are you serious?",
+      "group": "11"
+    },
+    {
+      "id": "c104",
+      "term": "本当ですか。",
+      "meaning": "Are you for real?",
+      "group": "11"
+    },
+    {
+      "id": "c105",
+      "term": "勘弁してください。",
+      "meaning": "Give me a break.",
+      "group": "11"
+    },
+    {
+      "id": "c106",
+      "term": "それは残念です。",
+      "meaning": "That's too bad.",
+      "group": "11"
+    },
+    {
+      "id": "c107",
+      "term": "そうだといいですね。",
+      "meaning": "I hope so.",
+      "group": "11"
+    },
+    {
+      "id": "c108",
+      "term": "そうではないといいですね。",
+      "meaning": "I hope not.",
+      "group": "11"
+    },
+    {
+      "id": "c109",
+      "term": "ねえ、聞いて。",
+      "meaning": "Guess what?",
+      "group": "11"
+    },
+    {
+      "id": "c110",
+      "term": "あのね。",
+      "meaning": "You know what?",
+      "group": "11"
+    },
+    {
+      "id": "c111",
+      "term": "気をつけて。",
+      "meaning": "Watch out.",
+      "group": "12"
+    },
+    {
+      "id": "c112",
+      "term": "危ない。",
+      "meaning": "Look out.",
+      "group": "12"
+    },
+    {
+      "id": "c113",
+      "term": "注意して。",
+      "meaning": "Heads up.",
+      "group": "12"
+    },
+    {
+      "id": "c114",
+      "term": "もう十分です。",
+      "meaning": "That's enough.",
+      "group": "12"
+    },
+    {
+      "id": "c115",
+      "term": "やってみます。",
+      "meaning": "I'll give it a try.",
+      "group": "12"
+    },
+    {
+      "id": "c116",
+      "term": "急いでいます。",
+      "meaning": "I'm in a hurry.",
+      "group": "12"
+    },
+    {
+      "id": "c117",
+      "term": "少しだけです。",
+      "meaning": "Just a little bit.",
+      "group": "12"
+    },
+    {
+      "id": "c118",
+      "term": "食事を楽しんで。",
+      "meaning": "Enjoy your meal.",
+      "group": "12"
+    },
+    {
+      "id": "c119",
+      "term": "困っています。",
+      "meaning": "I'm in trouble.",
+      "group": "12"
+    },
+    {
+      "id": "c120",
+      "term": "困った状況です。",
+      "meaning": "I'm in a pickle.",
+      "group": "12"
+    },
+    {
+      "id": "c121",
+      "term": "やりきりました。",
+      "meaning": "I made it.",
+      "group": "13"
+    },
+    {
+      "id": "c122",
+      "term": "できました。",
+      "meaning": "I did it.",
+      "group": "13"
+    },
+    {
+      "id": "c123",
+      "term": "会えてうれしいです。",
+      "meaning": "Good to see you.",
+      "group": "13"
+    },
+    {
+      "id": "c124",
+      "term": "私が対処できます。",
+      "meaning": "I can handle it.",
+      "group": "13"
+    },
+    {
+      "id": "c125",
+      "term": "これはできます。",
+      "meaning": "I got this.",
+      "group": "13"
+    },
+    {
+      "id": "c126",
+      "term": "なんとかします。",
+      "meaning": "I'll figure it out.",
+      "group": "13"
+    },
+    {
+      "id": "c127",
+      "term": "失敗しました。",
+      "meaning": "I messed up.",
+      "group": "13"
+    },
+    {
+      "id": "c128",
+      "term": "変ですね。",
+      "meaning": "That's weird.",
+      "group": "13"
+    },
+    {
+      "id": "c129",
+      "term": "場合によります。",
+      "meaning": "It depends.",
+      "group": "13"
+    },
+    {
+      "id": "c130",
+      "term": "やる価値はないです。",
+      "meaning": "It's not worth it.",
+      "group": "13"
+    },
+    {
+      "id": "c131",
+      "term": "お金がありません。",
+      "meaning": "I'm broke.",
+      "group": "14"
+    },
+    {
+      "id": "c132",
+      "term": "誰でもそうなります。",
+      "meaning": "We've all been there.",
+      "group": "14"
+    },
+    {
+      "id": "c133",
+      "term": "仕方ありません。",
+      "meaning": "I can't help it.",
+      "group": "14"
+    },
+    {
+      "id": "c134",
+      "term": "くつろいでください。",
+      "meaning": "Make yourself at home.",
+      "group": "14"
+    },
+    {
+      "id": "c135",
+      "term": "気持ちはわかります。",
+      "meaning": "I feel you.",
+      "group": "14"
+    },
+    {
+      "id": "c136",
+      "term": "私のせいです。",
+      "meaning": "It's my fault.",
+      "group": "14"
+    },
+    {
+      "id": "c137",
+      "term": "それはいいですね。",
+      "meaning": "That's a good one.",
+      "group": "14"
+    },
+    {
+      "id": "c138",
+      "term": "私には合いません。",
+      "meaning": "It's not my thing.",
+      "group": "14"
+    },
+    {
+      "id": "c139",
+      "term": "私の好みではありません。",
+      "meaning": "It's not my cup of tea.",
+      "group": "14"
+    },
+    {
+      "id": "c140",
+      "term": "ありがたいです。",
+      "meaning": "I appreciate it.",
+      "group": "14"
+    },
+    {
+      "id": "c141",
+      "term": "終わりです。",
+      "meaning": "It's over.",
+      "group": "15"
+    },
+    {
+      "id": "c142",
+      "term": "それは信じません。",
+      "meaning": "I don't buy it.",
+      "group": "15"
+    },
+    {
+      "id": "c143",
+      "term": "話すと長くなります。",
+      "meaning": "It's a long story.",
+      "group": "15"
+    },
+    {
+      "id": "c144",
+      "term": "まだ決められません。",
+      "meaning": "I'm on the fence.",
+      "group": "15"
+    },
+    {
+      "id": "c145",
+      "term": "それは前に聞きました。",
+      "meaning": "I've heard that before.",
+      "group": "15"
+    },
+    {
+      "id": "c146",
+      "term": "聞き覚えがあります。",
+      "meaning": "It rings a bell.",
+      "group": "15"
+    },
+    {
+      "id": "c147",
+      "term": "遅れています。",
+      "meaning": "I'm running late.",
+      "group": "15"
+    },
+    {
+      "id": "c148",
+      "term": "そのうち慣れます。",
+      "meaning": "You'll get used to it.",
+      "group": "15"
+    },
+    {
+      "id": "c149",
+      "term": "やっても無駄です。",
+      "meaning": "It's no use.",
+      "group": "15"
+    },
+    {
+      "id": "c150",
+      "term": "見てみて。",
+      "meaning": "Check it out.",
+      "group": "15"
+    }
+  ]
+}
